@@ -45,18 +45,57 @@
 // !//отрицание (превращает true в false)
 // !=// не равно
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
- const firstQ = prompt('Один из последних просмотренных фильмов?');
- const secondQ = prompt('На сколько оцените его');
- const thirdQ = prompt('Один из последних просмотренных фильмов?');
- const fourthQ = prompt('На сколько оцените его');
-personalMovieDB.movies[firstQ] = secondQ;
-personalMovieDB.movies[thirdQ] = fourthQ;
-console.log(personalMovieDB);  
+
+
+
+// let num = 10;
+// if (num < 9) {
+//     console.log('Fuck');
+// } else if (num > 100) {
+//     console.log('Error');
+// } else {
+//     console.log('Kek');
+// }
+// let num = 1;
+// switch (num) { //только строгое сравнение (без знаков ><)
+//     case 12:
+//         console.log('Неверно');
+//         break;
+//     case 5:
+//         console.log('Неверно');
+//         break;
+//     case 10:
+//         console.log('Ez');
+//         break;
+//     default:
+//         console.log('Fuck');
+//         break;    
+// }
+
+let num = 50;
+while (num <= 55) {
+    console.log(num);
+    num++;
+}
+
+let num = 50;
+do {
+    console.log(num);
+    num++;  
+}
+while (num <=55);
+
+let num = 10;
+for (let i = 1; i < 8; i++) {
+    console.log(num);
+    num++;
+}
+
+let num = 10;
+for (let i = 1; i < 10; i++) {
+    if (i === 6) {
+        //break;
+        continue; // пропуск итерации
+    }
+    console.log(i);
+}
